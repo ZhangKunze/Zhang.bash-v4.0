@@ -11,7 +11,7 @@ chmod +x ~/Zhang.bash/Zhang.bash && .~/Zhang.bash/Zhang.bash
 ```
 
 ```bash
-chmod +x ~/Zhang.bash/Zhang\(Not_good-Edition\).bash && .~/Zhang.bash/Zhang\(Not_good-Edition\).bash
+cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Editon\).bash && ./Zhang\(Not_good-Editon\).bash
 ```
 
 My GitHub: https://github.com/ZhangKunze
@@ -28,7 +28,7 @@ chmod +x ~/Zhang.bash/Zhang.bash && .~/Zhang.bash/Zhang.bash
 ```
 
 ```bash
-chmod +x ~/Zhang.bash/Zhang\(Not_good-Edition\).bash && .~/Zhang.bash/Zhang\(Not_good-Edition\).bash
+cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Editon\).bash && ./Zhang\(Not_good-Editon\).bash
 ```
 
 我的 Github : https://github.com/ZhangKunze
