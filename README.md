@@ -20,6 +20,8 @@ cd ~/Zhang.bash/ && chmod +x zkz && cp -a zkz $PATH/zkz
 
 My GitHub: https://github.com/ZhangKunze
 
+[中文版](./README_Chinese.md)
+
 中文版：
 本仓库是 Zhang.bash 脚本的4.0版。
 提升了体验，升级了功能。
