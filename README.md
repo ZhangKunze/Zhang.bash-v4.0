@@ -14,6 +14,10 @@ chmod +x ~/Zhang.bash/Zhang.bash && .~/Zhang.bash/Zhang.bash
 cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Editon\).bash && ./Zhang\(Not_good-Editon\).bash
 ```
 
+```bash
+cd ~/Zhang.bash/ && chmod +x zkz && cp -a zkz $PATH/zkz
+```
+
 My GitHub: https://github.com/ZhangKunze
 
 中文版：
@@ -29,6 +33,10 @@ chmod +x ~/Zhang.bash/Zhang.bash && .~/Zhang.bash/Zhang.bash
 
 ```bash
 cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Editon\).bash && ./Zhang\(Not_good-Editon\).bash
+```
+
+```bash
+cd ~/Zhang.bash/ && chmod +x zkz && cp -a zkz $PATH/zkz
 ```
 
 我的 Github : https://github.com/ZhangKunze
