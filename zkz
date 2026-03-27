@@ -92,3 +92,45 @@ fi
 if [ "$1" = "-YYN" ]; then
 echo "好吧，彩蛋其实就是直接运行 $0 "
 fi
+if [ "$1" = "-YYN_YN_LOOK" ]; then
+echo "这回你真的赢了"
+while true; do
+echo '------------------------------------------------------'
+echo '[1]回到家目录。cd home                               |'
+echo '[2]列出当前目录的所有文件。ls                        |'
+echo '[3]列出当前目录所有文件，包括所有者和属性。ls -la    |'
+echo '[4]保存日志。log                                     |'
+echo '[5]当前路径。pwd                                     |'
+echo '[6]网络测试。ping(baidu|百度)                        |'
+echo '[7]安装软件。apt install                             |'
+echo '[8]打开Python。Open Python                           |'
+echo '[0]退出。exit                                        |'
+echo '------------------------------------------------------'
+read -p "选择哪一个?" YYN
+if [[ "$YYN" = "1" ]]; then
+cd
+elif [[ "$YYN" = "2" ]]; then
+ls
+elif [[ "$YYN" = "3" ]]; then
+ls -la
+elif [ "$YYN" = "5" ]; then
+pwd
+elif [ "$YYN" = "6" ]; then
+ping -c 4 -W 1 baidu.com >/dev/null 2>&1 && echo "🌐 已联网" || echo "📴 未联网"
+ping -c 4 baidu.com | grep -E "(packet loss|rtt min/avg/max)"
+elif [[ "$YYN" = "0" ]]; then
+exit 0
+elif [[ "$YYN" =~ ^[4]$ ]]; then
+mkdir -p /sdcard/Zhang.bash.log
+echo "$(date) $(whoami)" >> /sdcard/Zhang.bash.log/runing.log
+elif [[ "$YYN" = "7" ]]; then
+read -p "请输入你要安装软件包的准确包名。Please provide the exact package name of the software you want to install." install
+pkg install $install
+elif [[ "$YYN" = "8" ]]; then
+echo '请确保您先前已经运行了"pkg install python"这条命令后再使用。Please you run "pkg install python"command.l'
+python
+else
+    echo "🆘🆘无效选择！🆘🆘"
+fi
+done
+fi
