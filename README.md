@@ -8,7 +8,7 @@ It offers an improved experience and upgraded functionality.
 This version was developed locally using Git during the winter break when I couldn't log in to my GitHub account.
 Versions 2.0, 3.0, and 3.2 have been modified over time, and I no longer have copies of them. They were unstable and had incomplete features.
 
-Command:
+Commands:
 ```bash
 chmod +x ~/Zhang.bash/Zhang.bash && bash ~/Zhang.bash/Zhang.bash
 ```
