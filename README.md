@@ -14,7 +14,7 @@ chmod +x ~/Zhang.bash/Zhang.bash && bash ~/Zhang.bash/Zhang.bash
 ```
 
 ```bash
-cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Edition\).bash && bash Zhang\(Not_good-Edition\).bash
+cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Edition\).bash && sh Zhang\(Not_good-Edition\).bash
 ```
 
 ```bash
