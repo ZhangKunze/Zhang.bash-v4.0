@@ -10,11 +10,11 @@ Versions 2.0, 3.0, and 3.2 have been modified over time, and I no longer have co
 
 Command:
 ```bash
-chmod +x ~/Zhang.bash/Zhang.bash && .~/Zhang.bash/Zhang.bash
+chmod +x ~/Zhang.bash/Zhang.bash && bash ~/Zhang.bash/Zhang.bash
 ```
 
 ```bash
-cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Editon\).bash && ./Zhang\(Not_good-Editon\).bash
+cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Editon\).bash && bash /Zhang\(Not_good-Editon\).bash
 ```
 
 ```bash
