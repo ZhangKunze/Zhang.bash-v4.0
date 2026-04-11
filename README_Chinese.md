@@ -23,4 +23,6 @@ cd ~/Zhang.bash/ && chmod +x zkz && cp -a zkz $PATH/zkz
 chmod +x ~/Zhang.bash-v4.0/第三个我写的程序 && ~/Zhang.bash-v4.0/第三个我写的程序
 ```
 
+由于我是一个小学生，开发脚本只是课余时间，所以顶多能维护一个脚本， 而原版可以让我在课余的时间写更多的代码，而不需要考虑兼容性，所以Zhang(Not_good-Edition).bash不再维护。
+
 我的 Github : https://github.com/ZhangKunze
