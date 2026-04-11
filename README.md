@@ -18,7 +18,7 @@ cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Edition\).bash && sh Zhang\(Not_goo
 ```
 
 ```bash
-cd ~/Zhang.bash/ && chmod +x zkz && cp -a zkz $PATH/zkz
+cd ~/Zhang.bash/ && chmod +x zkz && cp /data/data/com.termux/files/usr/bin/zkz
 ```
 
 ```bash
