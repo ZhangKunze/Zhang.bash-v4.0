@@ -1,4 +1,5 @@
 #!/system/bin/sh
+echo "注意：本脚本已不再维护，如需使用最新版的功能，请安装Termux，并使用Zhang.bash。（具体的情况见README）"
 uname -a
 sleep 3
 whoami
