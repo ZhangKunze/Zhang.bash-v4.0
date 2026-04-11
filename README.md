@@ -19,7 +19,7 @@ cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Edition\).bash && sh Zhang\(Not_goo
 
 ```bash
 cd ~/Zhang.bash/ && chmod +x zkz && cp -a zkz $PATH/zkz
-``
+```
 
 ```bash
 chmod +x ~/Zhang.bash-v4.0/第三个我写的程序 && ~/Zhang.bash-v4.0/第三个我写的程序 
