@@ -25,6 +25,8 @@ cd ~/Zhang.bash/ && chmod +x zkz && cp -a zkz $PATH/zkz
 chmod +x ~/Zhang.bash-v4.0/第三个我写的程序 && ~/Zhang.bash-v4.0/第三个我写的程序 
 ```
 
+####Since I'm just an elementary school student and only develop scripts in my spare time, I can at most maintain one script. The original version allows me to write more code after school without worrying about compatibility, so Zhang(Not_good-Edition).bash will no longer be maintained.####
+
 My GitHub: https://github.com/ZhangKunze
 
 [中文版](./README_Chinese.md)
