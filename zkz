@@ -45,53 +45,6 @@ fi
 if [ "$1" = "-YYN" ]; then
 echo "好吧，彩蛋其实就是直接运行 $0 "
 fi
-#!/data/data/com.termux/files/usr/bin/bash
-if [ "$1" = "" ]; then
-echo '       ___________         '
-echo '                 /'
-echo '                /'
-echo '               /'
-echo '              /'
-echo '             /'
-echo '            /'
-echo '           /'
-echo '          / '
-echo '       ------------'
-echo ""
-echo '      |     /'
-echo '      |    /'
-echo '      |   /'
-echo '      |  /'
-echo '      |/'
-echo '      |\ '
-echo '      | \ '
-echo '      |  \ '
-echo '      |    \ '
-echo '      |     \ '
-echo ""
-echo '       ___________         '
-echo '                 /'
-echo '                /'
-echo '               /'
-echo '              /'
-echo '             /'
-echo '            /'
-echo '           /'
-echo '          / '
-echo '       ------------'
-fi
-if [ "$1" = "-v" ]; then
-echo "Hi！We are going！"
-fi
-if [ "$1" = "-你没有going" ]; then
-echo "好吧，这个脚本里没有你想要的彩蛋"
-fi
-if [ "$1" = "-怎么会没有" ]; then
-echo "不是你，你想干啥啊，真没有啊"
-fi
-if [ "$1" = "-YYN" ]; then
-echo "好吧，彩蛋其实就是直接运行 $0 "
-fi
 if [ "$1" = "-YYN_YN_LOOK" ]; then
 echo "这回你真的赢了"
 while true; do
