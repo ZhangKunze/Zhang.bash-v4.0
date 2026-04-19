@@ -1,4 +1,5 @@
 #!/data/data/com.termux/files/usr/bin/bash
+export zhang_bash_run=true
 echo "请确认您的终端环境是官方版的(来源通常在github、Coolapk等)"
 echo "防止恶意版本窃取您的信息"
 echo '安全确认...'

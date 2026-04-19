@@ -10,15 +10,15 @@ Versions 2.0, 3.0, and 3.2 have been modified over time, and I no longer have co
 
 Commands:
 ```bash
-chmod +x ~/Zhang.bash/Zhang.bash && bash ~/Zhang.bash/Zhang.bash
+chmod +x ~/Zhang.bash/Zhang.bash && . ~/Zhang.bash/Zhang.bash
 ```
 
 ```bash
-cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Edition\).bash && sh Zhang\(Not_good-Edition\).bash
+cd ~/Zhang.bash/ && chmod +x Zhang\(Not_good-Edition\).bash && . Zhang\(Not_good-Edition\).bash && cd
 ```
 
 ```bash
-cd ~/Zhang.bash/ && chmod +x zkz && cp /data/data/com.termux/files/usr/bin/zkz
+cd ~/Zhang.bash/ && chmod +x zkz && cp -a /data/data/com.termux/files/usr/bin/zkz
 ```
 
 ```bash
