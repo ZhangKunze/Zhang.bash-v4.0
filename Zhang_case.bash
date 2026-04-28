@@ -44,27 +44,23 @@ echo '[8]打开Python。Open Python                           |'
 echo '[^C]退出。exit                                        |'
 echo '------------------------------------------------------'
 read -p "选择哪一个?" YYN
-if [[ "$YYN" = "1" ]]; then
-cd
-elif [[ "$YYN" = "2" ]]; then
-ls
-elif [[ "$YYN" = "3" ]]; then
-ls -la
-elif [ "$YYN" = "5" ]; then
-pwd
-elif [ "$YYN" = "6" ]; then
-ping -c 4 -W 1 baidu.com >/dev/null 2>&1 && echo "🌐 已联网" || echo "📴 未联网"
-ping -c 4 baidu.com | grep -E "(packet loss|rtt min/avg/max)"
-elif [[ "$YYN" =~ ^[4]$ ]]; then
-mkdir -p /sdcard/Zhang.bash.log
+case $YYN in
+1) cd ;;
+2) ls ;;
+3) ls -la ;;
+4) mkdir -p /sdcard/Zhang.bash.log
 echo "$(date) $(whoami)" >> /sdcard/Zhang.bash.log/runing.log
-elif [[ "$YYN" = "7" ]]; then
-read -p "请输入你要安装软件包的准确包名。Please provide the exact package name of the software you want to install." install
+;;
+5) pwd ;;
+6) ping -c 4 -W 1 baidu.com >/dev/null 2>&1 && echo "🌐 已联网" || echo "📴 未联网"
+ping -c 4 baidu.com | grep -E "(packet loss|rtt min/avg/max)"
+;;
+7) read -p "请输入你要安装软件包的准确包名。Please provide the exact package name of the software you want to install." install
 pkg install $install
-elif [[ "$YYN" = "8" ]]; then
-echo '请确保您先前已经运行了"pkg install python"这条命令后再使用。Please you run "pkg install python"command.l'
+;;
+8) echo '请确保您先前已经运行了"pkg install python"这条命令后再使用 。Please you run "pkg install python"command.l'
 python
-else
-    echo "🆘🆘无效选择！🆘🆘"
-fi
+;;
+*) echo "🆘🆘无效选择！🆘🆘🆘" ;;
+esac
 done
