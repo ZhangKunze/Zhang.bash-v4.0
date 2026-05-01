@@ -1,15 +1,12 @@
-#!/data/data/com.termux/files/usr/bin/bash
 export zhang_bash_run=true
 echo "请确认您的终端环境是官方版的(来源通常在github、Coolapk等)"
 echo "防止恶意版本窃取您的信息"
 echo '安全确认...'
 read -p "继续？[Y/n] " an_quan
-
 if [[ "$an_quan" =~ ^[Nn]$ ]]; then
-    echo -e "^C"
-    exit 130
+echo -e "^C"
+exit 130
 fi
-
 echo "继续执行..."
 echo '------------------------------------------------------'
 echo "     用户：User：$(whoami)"
@@ -20,11 +17,7 @@ echo "     当前路径：Working directory：$(pwd)"
 echo "     时间：time：$(date)"
 echo '-----------------------------------------------------'
 read -p '看完了吗？Have you finished reading it？[Y/n]' LOOK
-if [[ "$LOOK" =~ ^[Nn]$ ]]; then
-echo '那就再等一会儿…'
-sleep 5
-fi
-echo "那就进行下一步了"
+[[ "$LOOK" =~ ^[Nn]$ ]] && echo '那就再等一会儿…' && sleep 5 || echo "那就进行下一步了"
 #以下是循环菜单
 while true; do
 echo '------------------------------------------------------'
