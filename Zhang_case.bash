@@ -36,7 +36,7 @@ echo '[5]当前路径。pwd                                     |'
 echo '[6]网络测试。ping(baidu|百度)                        |'
 echo '[7]安装软件。apt install                             |'
 echo '[8]打开Python。Open Python                           |'
-echo '[^C]退出。exit                                        |'
+echo '[^C]退出。exit                                       |'
 echo '------------------------------------------------------'
 read -p "选择哪一个?" YYN
 case $YYN in
