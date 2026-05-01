@@ -3,9 +3,9 @@ export zhang_bash_run=true
 echo "请确认您的终端环境是官方版的(来源通常在github、Coolapk等)"
 echo "防止恶意版本窃取您的信息"
 echo '安全确认...'
-read -p "继续？[Y/n] " response
+read -p "继续？[Y/n] " an_quan
 
-if [[ "$response" =~ ^[Nn]$ ]]; then
+if [[ "$an_quan" =~ ^[Nn]$ ]]; then
     echo -e "^C"
     exit 130
 fi
@@ -20,16 +20,11 @@ echo "     当前路径：Working directory：$(pwd)"
 echo "     时间：time：$(date)"
 echo '-----------------------------------------------------'
 read -p '看完了吗？Have you finished reading it？[Y/n]' LOOK
-if [[ "$LOOK" =~ ^[Yy]$ ]]; then
-echo "那就进行下一步了"
-fi
 if [[ "$LOOK" =~ ^[Nn]$ ]]; then
 echo '那就再等一会儿…'
 sleep 5
 fi
-if [[ -z "$LOOK" ]]; then
 echo "那就进行下一步了"
-fi
 #以下是循环菜单
 while true; do
 echo '------------------------------------------------------'
