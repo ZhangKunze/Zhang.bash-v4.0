@@ -1,3 +1,5 @@
+#!/data/data/com.termux/files/usr/bin/bash
+[ -f ~/.Zhang.bash ] && . ~/.Zhang.bash
 case $1 in
 -v|-version) echo -e "This is Zhang.bash,version:4.0.\n这是 Zhang.bash，版本：4.0。" && return 0 ;;
 -zkz) echo "启动 zkz 彩蛋！" && ./zkz && return 0 ;;
