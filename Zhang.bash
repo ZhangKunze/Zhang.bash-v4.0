@@ -1,6 +1,7 @@
 case $1 in
 -v|-version) echo -e "This is Zhang.bash,version:4.0.\n这是 Zhang.bash，版本：4.0。" && return 0 ;;
 -zkz) echo "启动 zkz 彩蛋！" && ./zkz && return 0 ;;
+-h|-help) echo -e "本脚本是一个终端增强工具，旨在为用户提供更加方便管理系统的界面，选项\n-v/-version：显示版本号\n-h/-help：显示帮助信息\n-zkz：启动 'zkz' 彩蛋脚本" ;;
 esac
 export zhang_bash_run=true
 echo "请确认您的终端环境是官方版的(来源通常在github、Coolapk等)"
@@ -33,7 +34,7 @@ echo '[5]当前路径。pwd                                     |'
 echo '[6]网络测试。ping(baidu|百度)                        |'
 echo '[7]安装软件。apt install                             |'
 echo '[8]打开Python。Open Python                           |'
-echo '[^C]退出。exit                                       |'
+echo '[0]退出。exit                                        |'
 echo '------------------------------------------------------'
 read -p "选择哪一个?" YYN
 case $YYN in
@@ -53,6 +54,7 @@ pkg install $install
 8) echo '请确保您先前已经运行了"pkg install python"这条命令后再使用 。Please you run "pkg install python"command.l'
 python
 ;;
+0) break ;;
 *) echo "🆘🆘无效选择！🆘🆘🆘" ;;
 esac
 done
