@@ -1,4 +1,6 @@
 #!/data/data/com.termux/files/usr/bin/bash
+echo "本程序已不再维护！请使用Zhang.bash"
+sleep 1.3
 export zhang_bash_run=true
 echo "请确认您的终端环境是官方版的(来源通常在github、Coolapk等)"
 echo "防止恶意版本窃取您的信息"
