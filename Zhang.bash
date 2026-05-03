@@ -36,6 +36,7 @@ echo -e "\033[36m|\033[0m[5]当前路径。pwd                                  
 echo -e "\033[36m|\033[0m[6]网络测试。ping(baidu|百度)                        \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[7]安装软件。apt install                             \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[8]打开Python。Open Python                           \033[36m|\033[0m"
+echo -e "\033[36m|\033[0m[9]保存某行命令到配置文件。Save a command to file.   \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[0]退出。exit                                        \033[36m|\033[0m"
 echo -e "\033[36m-------------------------------------------------------\033[0m"
 read -e -p "选择哪一个? " YYN
@@ -59,6 +60,11 @@ pkg install $install
 ;;
 8) echo '请确保您先前已经运行了"pkg install python"这条命令后再使用 。Please you run "pkg install python"command.l'
 python
+;;
+9)
+read -e -p "请输入要保存的命令: " cmd
+echo "$cmd" >> ~/.Zhang.bash
+echo "已保存到 ~/.Zhang.bash"
 ;;
 0) break ;;
 *) echo "🆘🆘无效选择！🆘🆘🆘" ;;
