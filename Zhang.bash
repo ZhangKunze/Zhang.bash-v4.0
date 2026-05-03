@@ -36,7 +36,7 @@ echo -e "\033[36m|\033[0m[7]安装软件。apt install                          
 echo -e "\033[36m|\033[0m[8]打开Python。Open Python                           \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[0]退出。exit                                        \033[36m|\033[0m"
 echo -e "\033[36m-------------------------------------------------------\033[0m"
-read -p "选择哪一个? " YYN
+read -e -p "选择哪一个? " YYN
 if ! [[ "$YYN" =~ ^[0-9]+$ ]]; then
     eval "$YYN"
     continue
