@@ -1,3 +1,7 @@
+case $1 in
+-v|-version) echo -e "This is Zhang.bash,version:4.0.\n这是 Zhang.bash，版本：4.0。" && return 0 ;;
+-zkz) echo "启动 zkz 彩蛋！" && ./zkz && return 0 ;;
+esac
 export zhang_bash_run=true
 echo "请确认您的终端环境是官方版的(来源通常在github、Coolapk等)"
 echo "防止恶意版本窃取您的信息"
