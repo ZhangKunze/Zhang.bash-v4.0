@@ -1,4 +1,8 @@
 #!/data/data/com.termux/files/usr/bin/bash
+if [ "${BASH_VERSINFO[0]}" -lt 5 ]; then
+    echo "需要 Bash 5.0 以上版本"
+    exit 1
+fi
 [ -f ~/.Zhang.bash ] && . ~/.Zhang.bash
 case $1 in
 -v|-version) echo -e "This is Zhang.bash,version:4.0.\n这是 Zhang.bash，版本：4.0。" && return 0 ;;
