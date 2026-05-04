@@ -24,7 +24,7 @@ echo "     用户：User：$(whoami)"
 echo "     SELinux上下文：$(id -Z)"
 echo "     系统架构：system architecture：$(uname -m)"
 echo "     内核版本：kernel version：$(uname -v)"
-echo "     当前路径：Working directory：$(pwd)"
+echo "     工作路径：Working directory：$(pwd)"
 echo "     时间：time：$(date)"
 echo '-----------------------------------------------------'
 read -p '看完了吗？Have you finished reading it？[Y/n]' LOOK
@@ -40,7 +40,7 @@ echo -e "\033[36m|\033[0m[5]当前路径。pwd                                  
 echo -e "\033[36m|\033[0m[6]网络测试。ping(baidu|百度)                        \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[7]安装软件。apt install                             \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[8]打开Python。Open Python                           \033[36m|\033[0m"
-echo -e "\033[36m|\033[0m[9]保存某行命令到配置文件。Save a command to file.   \033[36m|\033[0m"
+echo -e "\033[36m|\033[0m[9]保存某行命令到配置文件。Save a command to file    \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[0]退出。exit                                        \033[36m|\033[0m"
 echo -e "\033[36m-------------------------------------------------------\033[0m"
 read -e -p "选择哪一个? " YYN
