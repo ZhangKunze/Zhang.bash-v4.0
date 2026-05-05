@@ -40,7 +40,8 @@ echo -e "\033[36m|\033[0m[5]当前路径。pwd                                  
 echo -e "\033[36m|\033[0m[6]网络测试。ping(baidu|百度)                        \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[7]安装软件。apt install                             \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[8]打开Python。Open Python                           \033[36m|\033[0m"
-echo -e "\033[36m|\033[0m[9]保存某行命令到配置文件。Save a command to file    \033[36m|\033[0m"
+echo -e "\033[36m|\033[0m[9]保存某行命令到配置文件。Save a command to file.   \033[36m|\033[0m"
+echo -e "\033[36m|\033[0m[10]使用 Shizuku Shell.Use Shizuku Shell.            \033[36m|\033[0m"
 echo -e "\033[36m|\033[0m[0]退出。exit                                        \033[36m|\033[0m"
 echo -e "\033[36m-------------------------------------------------------\033[0m"
 read -e -p "选择哪一个? " YYN
@@ -57,7 +58,7 @@ echo "$(date) $(whoami)" >> /sdcard/Zhang.bash.log/runing.log
 ;;
 5) pwd ;;
 6) ping -c 4 -W 1 baidu.com >/dev/null 2>&1 && echo "🌐 已联网" || echo "📴 未联网"
-ping -c 4 baidu.com | grep -E "(packet loss|rtt min/avg/max)"
+ping -c 4 baidu.com | grep -E '(packet loss|rtt min/avg/max)'
 ;;
 7) read -p "请输入你要安装软件包的准确包名。Please provide the exact package name of the software you want to install." install
 pkg install $install
@@ -69,6 +70,18 @@ python
 read -e -p "请输入要保存的命令: " cmd
 echo "$cmd" >> ~/.Zhang.bash
 echo "已保存到 ~/.Zhang.bash"
+;;
+10)
+if [ -z "$HOME" ]; then
+echo '错误：$HOME 环境变量未设置！'
+echo '请先设置 $HOME 环境变量后再使用此功能。'
+break
+fi
+if [[ -f ~/rish && -f ~/rish_shizuku.dex ]]; then
+sh ~/rish
+else
+echo "未找到 rish 文件，请确保已从 Shizuku 正确导出到家目录。"
+fi
 ;;
 0) break ;;
 *) echo "🆘🆘无效选择！🆘🆘🆘" ;;
