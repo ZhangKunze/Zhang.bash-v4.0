@@ -1,8 +1,4 @@
 #!/data/data/com.termux/files/usr/bin/bash
-if [ "${BASH_VERSINFO[0]}" -lt 5 ]; then
-    echo "需要 Bash 5.0 以上版本"
-    exit 1
-fi
 [ -f ~/.Zhang.bash ] && . ~/.Zhang.bash
 case $1 in
 -v|-version) echo -e "This is Zhang.bash,version:4.0.\n这是 Zhang.bash，版本：4.0。" && return 0 ;;
@@ -10,15 +6,6 @@ case $1 in
 -h|-help) echo -e "本脚本是一个终端增强工具，旨在为用户提供更加方便管理系统的界面，选项\n-v/-version：显示版本号\n-h/-help：显示帮助信息\n-zkz：启动 'zkz' 彩蛋脚本" ;;
 esac
 export zhang_bash_run=true
-echo "请确认您的终端环境是官方版的(来源通常在github、Coolapk等)"
-echo "防止恶意版本窃取您的信息"
-echo '安全确认...'
-read -p "继续？[Y/n] " an_quan
-if [[ "$an_quan" =~ ^[Nn]$ ]]; then
-echo -e "^C"
-exit 130
-fi
-echo "继续执行..."
 echo '------------------------------------------------------'
 echo "     用户：User：$(whoami)"
 echo "     SELinux上下文：$(id -Z)"
